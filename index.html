@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="App">
+        <header class="App-header">
+            <div id='calculator'>
+                <div>
+                    <input type='text' value='' id='display'></input>
+                </div>
+                <div>
+                    <button id='one' value='1' class="numberBtn">1</button>
+                    <button value='2' id='two' class="numberBtn">2</button>
+                    <button value='3' id='three' class="numberBtn">3</button>
+                    <button value='+' id='add' class="operatorBtn">+</button>
+                </div>
+                <div>
+                    <button value='4' id='four' class="numberBtn">4</button>
+                    <button value='5' id='five' class="numberBtn">5</button>
+                    <button value='6' id='six' class="numberBtn">6</button>
+                    <button value='-' id='subtract' class="operatorBtn">-</button>
+                </div>
+                <div>
+                    <button value='7' id='seven' class="numberBtn">7</button>
+                    <button value='8' id='eight' class="numberBtn">8</button>
+                    <button value='9' id='nine' class="numberBtn">9</button>
+                    <button value='*' id='multiply' class="operatorBtn">x</button>
+                </div>
+                <div>
+                    <button value='clear' id='clear'>C</button>
+                    <button value='0' id='zero' class="numberBtn">0</button>
+                    <button value='/' id='divide' class="operatorBtn">/</button>
+                    <button value='.' id='decimal' class="decimalBtn">.</button>
+                </div>
+                <div class ='row'>
+                    <span><b>Formula Logic</b</span>
+                    <button value='clearAll' id='clearAll'>AC</button>
+                    <button id='equals' onClick={this.compute}>=</button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
